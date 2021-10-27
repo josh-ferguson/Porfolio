@@ -1,0 +1,54 @@
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color:#3d3d3d;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            align-items: center;
+
+            .logo{
+                font-size: 35px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            .menu-container{
+                display: flex;
+                align-items: center;
+    
+                li{
+                    display: inline;
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    
+    
+                    .menu-btn{
+                        font-size: 25px;
+                        padding-left: 5px;
+                        text-decoration: none;
+                        color: inherit;
+                        border-left: 2px solid #3d3d3d;
+
+                        &:hover{
+                            color: rgb(197, 184, 169);
+                            border-left: 2px solid orange;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
