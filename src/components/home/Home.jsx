@@ -2,6 +2,7 @@ import "./home.scss"
 import { init } from 'ityped'
 import { useEffect, useRef } from "react"
 import Particles from "react-particles-js";
+import ParticlesConfig from "../../config/particles-config";
 
 export default function Home() {
 
@@ -17,17 +18,7 @@ export default function Home() {
     return (
         <div className="home" id="home">
             <Particles
-                params={{
-                    particles: {
-                        number: {
-                            value: 35,
-                            density: {
-                                enable: true,
-                                value_area: 900
-                            }
-                        }
-                    }
-                }}
+                params={ParticlesConfig}
             />
             <div className="left">
                 <div className="imgContainer">
