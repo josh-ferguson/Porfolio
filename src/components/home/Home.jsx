@@ -10,7 +10,9 @@ export default function Home() {
 
     useEffect(() => {
         init(textRef.current, {
-            showCursor: false,
+            showCursor: true,
+            backDelay: 1500,
+            backSpeed: 60,
             strings: ["UX Design", "Website Development", "Databases" ] 
         });
     }, [])

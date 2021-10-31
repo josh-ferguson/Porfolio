@@ -58,6 +58,19 @@
                 color: rgb(218, 132, 4);
                 font-size: 30px;
             }
+
+            .ityped-cursor{
+                animation: blink 1s infinite;
+            }
+
+            @keyframes blink {
+                50%{
+                    opacity: 1;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
         }
     }
 
