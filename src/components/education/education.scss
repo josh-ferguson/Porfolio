@@ -1,3 +1,13 @@
+@import "../../global.scss";
+
 .education{
-    background-color: lightcoral;
+    background-color: $maincolor;
+    display: flex;
+    justify-content: center;
+
+    h1{
+        color: rgb(218, 132, 4);
+        font-size: 60px;
+        margin-top: 20px;
+    }
 }
