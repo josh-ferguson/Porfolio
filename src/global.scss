@@ -1,1 +1,9 @@
 $maincolor:rgb(134, 134, 134);
+
+$widescreen: 1400px;
+
+@mixin widescreen {
+    @media (min-width: #{$widescreen}){
+        @content
+    }
+}
