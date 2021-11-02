@@ -1,10 +1,12 @@
 import "./education.scss"
+import Fade from "react-reveal/Fade";
 
 export default function Education() {
     return (
         <div className="education" id="education">
             <h1>Education</h1>
             <div className="container">
+                <Fade left>
                 <div className="paper">
                     <img src="assets/writting-paper.jpg" alt="background" />
                     <div className="text">
@@ -41,6 +43,8 @@ export default function Education() {
                         </ul>
                     </div>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className="paper">
                     <img src="assets/writting-paper.jpg" alt="background" />
                     <div className="text">
@@ -71,6 +75,7 @@ export default function Education() {
                         </ul>
                     </div>
                 </div>
+                </Fade>
             </div>
         </div>
     )
