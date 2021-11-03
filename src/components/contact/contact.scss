@@ -16,6 +16,34 @@
         margin-top: 20px;
     }
 
+    .linksContainer{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        margin-top: 10px;
+        padding: 5px;
+        cursor: pointer;
+
+        span{
+
+
+            a{
+                color: white;
+                text-decoration: none;
+
+                &:hover{
+                    color: rgb(197, 184, 169);
+                    text-decoration: underline;
+                }
+            }
+            &:hover{
+                color: rgb(197, 184, 169);
+                text-decoration: underline;
+            }
+        }
+    }
+
     .formContainer{
         width: 80%;
         max-width: 1000px;

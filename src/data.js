@@ -1,7 +1,7 @@
 export const studentProjectsPortfolio = [
     {
       id: 1,
-      title: "Proof-Doc",
+      title: "Proof-Doc (code)",
       img:
         "assets/proof-doc.png",
       link:
@@ -9,7 +9,7 @@ export const studentProjectsPortfolio = [
     },
     {
       id: 2,
-      title: "Buddy-Up",
+      title: "Buddy-Up (code)",
       img:
         "assets/buddy-up.png",
       link:
@@ -20,7 +20,7 @@ export const studentProjectsPortfolio = [
 export const personalProjectsPortfolio = [
     {
       id: 1,
-      title: "Personal Portfolio",
+      title: "Personal Portfolio (code)",
       img: "assets/portfolio.jpg",
       link:
         "https://github.com/josh-ferguson/Porfolio",
