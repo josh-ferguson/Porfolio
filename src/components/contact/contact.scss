@@ -1,3 +1,71 @@
+@import "../../global.scss";
+
 .contact{
-    background-color: lightblue;
+    // background-color: $maincolor;
+    background: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(../../contact-background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        color: rgb(218, 132, 4);
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    .formContainer{
+        width: 80%;
+        max-width: 1000px;
+        height: 70%;
+        margin-top: 30px;
+        border: 2px solid white;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        form{
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input, textarea{
+                width: 90%;
+                padding: 10px;
+                margin-bottom: 30px;
+                outline: 0;
+                border: 2px solid white;
+                color: white;
+                background: rgba(0,0,0,.5);
+                font-size: 20px;
+                font-weight: bold;                
+            }
+
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus{
+                border: 2px solid white;
+                -webkit-text-fill-color: white;
+                -webkit-box-shadow: 0 0 0px 0px rgba(0,0,0,.5) inset;
+                transition: background-color 5000s ease-in-out 0s;
+            }
+
+            button{
+                padding: 10px 0;
+                color: white;
+                border: 2px solid white;
+                background: rgba(0,0,0,.5);
+                width: 90%;
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+    }
 }

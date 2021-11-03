@@ -4,7 +4,6 @@ import Intro from "./components/intro/Intro";
 import Education from "./components/education/Education";
 import Portfolio from "./components/porfolio/Porfolio";
 import Contact from "./components/contact/Contact";
-import Footer from "./components/footer/Footer";
 import "./app.scss";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
         <Portfolio />
         <Contact />
       </div>
-      <Footer />
     </div>
   );
 }
