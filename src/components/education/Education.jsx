@@ -1,15 +1,12 @@
 import "./education.scss"
-import Fade from "react-reveal/Fade";
 
 export default function Education() {
     return (
         <div className="education" id="education">
             <h1>Education</h1>
             <div className="container">
-                <Fade left>
-                <div className="paper">
-                    <img src="assets/writting-paper.jpg" alt="background" />
-                    <div className="text">
+                <div className="left">
+                    <div className="textContainer">
                         <h2>BACHELOR OF SCIENCE IN COMPUTING</h2>
                         <h3>University of Portsmouth - 2020: 2:2</h3>
                         <ul>
@@ -42,12 +39,7 @@ export default function Education() {
                             </li>
                         </ul>
                     </div>
-                </div>
-                </Fade>
-                <Fade right>
-                <div className="paper">
-                    <img src="assets/writting-paper.jpg" alt="background" />
-                    <div className="text">
+                    <div className="textContainer">
                         <h2>MASTER OF SCIENCE IN INFORMATION SYSTEMS</h2>
                         <h3>University of Portsmouth - 2021: Merit</h3>
                         <ul>
@@ -75,7 +67,24 @@ export default function Education() {
                         </ul>
                     </div>
                 </div>
-                </Fade>
+                <div className="right">
+                    <h2>SKILLS:</h2>
+                    <ul>
+                        <li><a href="">HTML</a></li>
+                        <li><a href="">CSS/SASS</a></li>
+                        <li><a href="">JAVASCRIPT</a></li>
+                        <li><a href="">REACT.JS</a></li>
+                        <li><a href="">NODE.JS</a></li>
+                        <li><a href="">DATABAES</a></li>
+                        <li><a href="">UX DESIGN</a></li>
+                    </ul>
+                    <div className="imgContainer">
+                        <img 
+                            src="assets/graduation-hat.png" 
+                            alt="Graduation hat" 
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     )

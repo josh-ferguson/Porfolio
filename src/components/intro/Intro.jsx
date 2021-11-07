@@ -9,9 +9,9 @@ export default function Intro() {
                     <div className="wrapper">
                         <h1>ABOUT ME</h1>
                         <p>
-                            I recently graduated from 
-                            University of Portsmouth with 
-                            skills in web design, databases,
+                            I have recently graduated with a Masters 
+                            degree from the University of Portsmouth 
+                            with skills in web design, databases,
                             and website usability. I’m now 
                             looking for a challenging role in 
                             website development.
