@@ -1,8 +1,6 @@
 import "./home.scss"
 import { init } from 'ityped'
 import { useEffect, useRef } from "react"
-import Particles from "react-particles-js";
-import ParticlesConfig from "../../config/particles-config";
 
 export default function Home() {
 
@@ -19,9 +17,6 @@ export default function Home() {
 
     return (
         <div className="home" id="home">
-            <Particles
-                params={ParticlesConfig}
-            />
             <div className="left">
                 <div className="imgContainer">
                     <img src="assets/profile pic.jpg" alt="Profile" />
@@ -32,7 +27,7 @@ export default function Home() {
                     <h2>Hi There, I'm</h2>
                     <h1>Josh Ferguson</h1>
                     <h3>
-                        . <span ref={textRef}></span>
+                        - <span ref={textRef}></span>
                     </h3>
                 </div>
             </div>

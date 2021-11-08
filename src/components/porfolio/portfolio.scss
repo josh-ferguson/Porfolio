@@ -10,6 +10,10 @@
         color: rgb(218, 132, 4);
         font-size: 60px;
         margin-top: 20px;
+
+        @include mobile{
+            font-size: 30px;
+        }
     }
 
     ul{
@@ -17,6 +21,12 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile{
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 10px 0;
+        }
     }
 
     .container{
@@ -25,6 +35,10 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
+        @include mobile{
+            width: 100%;
+        }
 
         .item{
             background-color: #3d3d3d;
@@ -38,10 +52,20 @@
             align-items: center;
             cursor: pointer;
 
+            @include mobile{
+                width: 130px;
+                height: 100px;
+            }
+
             h3{
                 font-size: 20px;
                 margin: 5px 0;
                 color: white;
+                overflow: hidden;
+
+                @include mobile{
+                    font-size: 15px;
+                }
             }
 
             img{

@@ -7,12 +7,22 @@
     opacity: 0.8;
     display: flex;
 
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left{
         flex: 0.5;
         overflow: hidden;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        @include mobile{
+            justify-content: center;
+            width: 100%;
+        }
 
         .imgContainer{
             width: 40vw;
@@ -26,7 +36,18 @@
             justify-content: center;
             float: right;
             z-index: 2;
+            overflow: hidden;
 
+            @include mobile{
+                align-items: center;
+                max-width: 60%;
+                width: 400px;
+                min-width: 100px;
+                max-height: 80%;
+                height: 400px;
+                min-height: 100px;
+            }
+            
             img{
                 width: 100%;
             }
@@ -45,18 +66,35 @@
             justify-content: center;
             z-index: 2;
 
+            @include mobile{
+                padding: 0;
+                align-items: center;
+            }
+
             h1{
                 color: white;
                 font-size: 60px;
                 margin: 10px 0;
+
+                @include mobile{
+                    font-size: 40px;
+                }
             }
             h2{
                 color: white;
                 font-size: 35px;
+
+                @include mobile{
+                    font-size: 30px;
+                }
             }
-            span{
+            span, h3{
                 color: rgb(218, 132, 4);
                 font-size: 30px;
+
+                @include mobile{
+                    font-size: 25px;
+                }
             }
 
             .ityped-cursor{
@@ -72,12 +110,5 @@
                 }
             }
         }
-    }
-
-    .tsparticles-canvas-el{
-        width: 100vw !important;
-        height: 100% !important;
-        position: absolute !important;
-        z-index: 1 !important;
     }
 }

@@ -70,13 +70,13 @@ export default function Education() {
                 <div className="right">
                     <h2>SKILLS:</h2>
                     <ul>
-                        <li><a href="">HTML</a></li>
-                        <li><a href="">CSS/SASS</a></li>
-                        <li><a href="">JAVASCRIPT</a></li>
-                        <li><a href="">REACT.JS</a></li>
-                        <li><a href="">NODE.JS</a></li>
-                        <li><a href="">DATABAES</a></li>
-                        <li><a href="">UX DESIGN</a></li>
+                        <li>HTML</li>
+                        <li>CSS/SASS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>REACT.JS</li>
+                        <li>NODE.JS</li>
+                        <li>DATABAES</li>
+                        <li>UX DESIGN</li>
                     </ul>
                     <div className="imgContainer">
                         <img 

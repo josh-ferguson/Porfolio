@@ -6,6 +6,11 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left{
         flex: 0.5;
         display: flex;
@@ -13,12 +18,20 @@
         flex-direction: column;
         height: 100%;
 
+        @include mobile{
+            flex: 0.6;
+        }
+
         .upper-top{
             background-color: rgb(218, 132, 4);
             height: 20px;
             margin: 10px 50px;
             border-radius: 16px;
             animation: stretchLarge 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         @keyframes stretchLarge {
@@ -39,6 +52,10 @@
             margin: 10px 0px 60px 50px;
             border-radius: 16px;
             animation: stretchSmall 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         @keyframes stretchSmall {
@@ -62,19 +79,35 @@
             box-shadow: 0px 10px 13px -7px #000000, 3px 5px 15px 5px rgba(0,0,0,0);
             transition: all 1s ease-in-out;
 
+            @include mobile{
+                margin: 10px 20px;
+            }
+
             &:hover{
                 transform: scale(1.1);
+
+                @include mobile{
+                    transform: none;
+                }
             }
 
             h1{
                 font-size: 60px;
                 color: rgb(218, 132, 4);
                 margin-bottom: 10px;
+
+                @include mobile{
+                    font-size: 30px;
+                }
             }
             
             p{
                 font-size: 30px;
                 color: white;
+
+                @include mobile{
+                    font-size: 20px;
+                }
             }
         }
 
@@ -84,6 +117,10 @@
             margin: 10px 50px;
             border-radius: 16px;
             animation: stretchLarge 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
         }
 
         .lower-top{
@@ -92,6 +129,10 @@
             margin: 60px 0px 10px 50px;
             border-radius: 16px;
             animation: stretchSmall 1s infinite;
+
+            @include mobile{
+                display: none;
+            }
         }
     }
 
@@ -103,6 +144,11 @@
         align-items: center;
         height: 100%;
 
+        @include mobile{
+            flex: 0.4;
+            width: 100%;
+        }
+
         .imgContainer{
             width: 35vw;
             height: 35vw;
@@ -113,8 +159,21 @@
             transform: rotate(-15deg);
             transition: all 1s ease-in-out;
 
+            @include mobile{
+                width: 25vw;
+                min-width: 150px;
+                height: 25vw;
+                min-height: 150px;
+                transform: none;
+                transition: none;
+            }
+
             &:hover{
                 transform: scale(1.1) rotate(-15deg);
+
+                @include mobile{
+                    transform: none;
+                }
             }
 
             img{
