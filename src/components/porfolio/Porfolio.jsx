@@ -6,11 +6,14 @@ import {
     personalProjectsPortfolio,
     professionalProjects,
 } from "../../data";
+import Modal from "../modal/Modal";
 
 export default function Porfolio() {
 
     const [selected,setSelected] = useState("studentProjects");
     const [data,setData] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
+    const [modalData] = useState([]);
 
     const list = [
         {
@@ -47,6 +50,7 @@ export default function Porfolio() {
     return (
         <div className="portfolio" id="portfolio">
             <h1>Portfolio</h1>
+            {openModal && <Modal closeModal={setOpenModal} modalData={modalData}/>}
             <ul>
                 {list.map(item=>(
                     <PortfolioList 
@@ -59,8 +63,16 @@ export default function Porfolio() {
             </ul>
             <div className="container">
                 {data.map((d) => (
-
-                    <div className="item" onClick={()=> window.open(d.link, "_blank")}>
+                    <div className="item" 
+                        // onClick={()=> window.open(d.link, "_blank"}
+                        onClick={()=> {
+                            setOpenModal(true);
+                            modalData.title = d.title;
+                            modalData.img = d.img;
+                            modalData.link = d.link;
+                            modalData.desc = d.desc
+                        }}
+                    >
                         <h3>{d.title}</h3>
                         <img 
                             src={d.img}

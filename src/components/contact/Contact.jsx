@@ -1,6 +1,20 @@
 import "./contact.scss"
+import emailjs from "emailjs-com";
 
 export default function contact() {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('contact_form', 'template_x7gsbdt', e.target, 'user_R31Rt7RV2zPsAI9sMYWC2')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        e.target.reset()
+    };
+
     return (
         <div className="contact" id="contact">
             <h1>Contact Me</h1>
@@ -11,12 +25,12 @@ export default function contact() {
                 <span><a href="https://github.com/josh-ferguson" target="_blank" rel="noreferrer">GitHub</a></span>
             </div>
             <div className="formContainer">
-                <form>
-                    <input type="text" id="name" placeholder="Name" required/>
-                    <input type="email" id="email" placeholder="Email" required/>
-                    <input type="text" id="subject" placeholder="Subject" required/>
-                    <textarea id="message" rows="8" placeholder="Message..." required></textarea>
-                    <button type= "submit">Send</button>
+                <form onSubmit={sendEmail}>
+                    <input type="text" id="name" placeholder="Name" name="name" required/>
+                    <input type="email" id="email" placeholder="Email" name="email" required/>
+                    <input type="text" id="subject" placeholder="Subject" name="subject" required/>
+                    <textarea id="message" rows="8" placeholder="Message..." name="message" required></textarea>
+                    <button type="submit">Send</button>
                 </form>
             </div>
         </div>
