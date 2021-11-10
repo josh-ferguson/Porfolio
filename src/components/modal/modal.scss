@@ -64,6 +64,7 @@
             .titleCloseBtn {
                 display: flex;
                 justify-content: flex-end;
+                overflow: hidden;
                 
                 button {
                     background-color: transparent;
@@ -76,12 +77,7 @@
             .title {
                 display: inline-block;
                 text-align: center;
-                margin-top: 10px;
                 overflow: hidden;
-
-                @include mobile{
-                    margin-top: 0;
-                }
 
                 h1{
                     font-size: 40px;
