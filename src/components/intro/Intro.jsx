@@ -13,8 +13,8 @@ export default function Intro() {
                             degree from the University of Portsmouth 
                             with skills in web design, databases,
                             and website usability. I’m now 
-                            looking for a challenging role in 
-                            website development.
+                            looking for a challenging front end developer 
+                            role in website development.
                         </p>
                     </div>
                 <span className="lower-top"></span>

@@ -5,7 +5,7 @@ function Modal({closeModal, modalData}) {
         <div className="modalBackground">
             <div className="modalContainer">
                 <div className="left">
-                    <img src={modalData.img} alt="project image" />
+                    <img src={modalData.img} alt="project" />
                 </div>
                 <div className="right">
                     <div className="titleCloseBtn">

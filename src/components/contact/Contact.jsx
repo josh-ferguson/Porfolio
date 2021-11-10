@@ -1,7 +1,11 @@
+import { useState } from "react"
 import "./contact.scss"
 import emailjs from "emailjs-com";
+import MessageConf from "./messageConf/MessageConf";
 
-export default function contact() {
+export default function Contact() {
+
+    const [openConf, setOpenConf] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -12,7 +16,8 @@ export default function contact() {
         }, (error) => {
             console.log(error.text);
         });
-        e.target.reset()
+        e.target.reset();
+        setOpenConf(true);
     };
 
     return (
@@ -24,6 +29,7 @@ export default function contact() {
                 <span><a href="https://www.linkedin.com/in/josh-ferguson-955532222/" target="_blank" rel="noreferrer">LinkedIn</a></span>
                 <span><a href="https://github.com/josh-ferguson" target="_blank" rel="noreferrer">GitHub</a></span>
             </div>
+            {openConf && <MessageConf closeConf={setOpenConf}/>}
             <div className="formContainer">
                 <form onSubmit={sendEmail}>
                     <input type="text" id="name" placeholder="Name" name="name" required/>

@@ -64,7 +64,6 @@ export default function Porfolio() {
             <div className="container">
                 {data.map((d) => (
                     <div className="item" 
-                        // onClick={()=> window.open(d.link, "_blank"}
                         onClick={()=> {
                             setOpenModal(true);
                             modalData.title = d.title;
