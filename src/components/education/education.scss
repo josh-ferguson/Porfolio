@@ -123,13 +123,13 @@
                     font-size: 20px;
                     margin: 5px 0;
                     display: block;
-                    cursor: pointer;
+                    // cursor: pointer;
                     
-                    -webkit-transition: font-size 0.3s ease;
-                    -moz-transition: font-size 0.3s ease;
-                    -o-transition: font-size 0.3s ease;
-                    -ms-transition: font-size 0.3s ease;
-                    transition: font-size 0.3s ease;
+                    // -webkit-transition: font-size 0.3s ease;
+                    // -moz-transition: font-size 0.3s ease;
+                    // -o-transition: font-size 0.3s ease;
+                    // -ms-transition: font-size 0.3s ease;
+                    // transition: font-size 0.3s ease;
 
                     @include mobile{
                         margin: 0;
@@ -140,9 +140,9 @@
                         border: none;
                     }
                     
-                    &:hover{
-                        font-size: 30px;;
-                    } 
+                    // &:hover{
+                    //     font-size: 30px;
+                    // } 
                 }
             }
 
