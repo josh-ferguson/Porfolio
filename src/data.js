@@ -31,6 +31,15 @@ export const personalProjectsPortfolio = [
       link:
         "https://github.com/josh-ferguson/Porfolio",
     },
+    {
+      id: 2,
+      title: "Movie App",
+      img: "assets/Movie-App.jpg",
+      desc: 
+        "This is a movie app project I created to track movies by adding them to a watchlist or watched list.",
+      link:
+        "https://github.com/josh-ferguson/Porfolio",
+    },
 ];
   
 export const professionalProjects = [
