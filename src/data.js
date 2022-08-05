@@ -40,6 +40,24 @@ export const personalProjectsPortfolio = [
       link:
         "https://github.com/josh-ferguson/Porfolio",
     },
+    {
+      id: 3,
+      title: "Rent Lux",
+      img: "assets/rentLux.jpg",
+      desc: 
+        "A business website to practice using flexbox with responsive design.",
+      link:
+        "https://github.com/josh-ferguson/rent_lux-flexbox",
+    },
+    {
+      id: 4,
+      title: "Simple Portfolio",
+      img: "assets/simplePortfolio.jpg",
+      desc: 
+        "This is a simple portfolio project using HTML, CSS and JavaScript. It displays some of the project that have been worked on during the Full-Stack Codecadamy course.",
+      link:
+        "https://github.com/josh-ferguson/portfolio_project-js-07.2022",
+    },
 ];
   
 export const professionalProjects = [
