@@ -38,7 +38,7 @@ export const personalProjectsPortfolio = [
       desc: 
         "This is a movie app project I created to track movies by adding them to a watchlist or watched list.",
       link:
-        "https://github.com/josh-ferguson/Porfolio",
+        "https://github.com/josh-ferguson/Movie-App",
     },
     {
       id: 3,
