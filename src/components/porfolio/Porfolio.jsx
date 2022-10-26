@@ -24,10 +24,11 @@ export default function Porfolio() {
             id: "personalProjects",
             title: "Personal Projects",
         },
-        {
-            id: "professionalProjects",
-            title: "Professional Projects",
-        }
+        // -- uncomment if professional projects added.
+        // {
+        //     id: "professionalProjects",
+        //     title: "Professional Projects",
+        // }
     ];
 
     useEffect(()=>{
