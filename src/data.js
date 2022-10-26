@@ -58,6 +58,15 @@ export const personalProjectsPortfolio = [
       link:
         "https://github.com/josh-ferguson/portfolio_project-js-07.2022",
     },
+    {
+      id: 5,
+      title: "Project Tracker",
+      img: "assets/projectTracker.jpg",
+      desc: 
+        "This is a website that allows the user to track current or future projects. It includes a todo list drag and drop feature for the projects features.",
+      link:
+        "https://github.com/josh-ferguson/project-tracker",
+    },
 ];
   
 export const professionalProjects = [
